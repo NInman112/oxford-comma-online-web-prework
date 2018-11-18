@@ -2,7 +2,7 @@ def oxford_comma(array)
   
   if array.count == 3
     array[-1] << (" and #{array[-1]}")
-    array[2].
+    array.delete(2)
     array[0..2].join(", ")
   else
     array.join(" and ")

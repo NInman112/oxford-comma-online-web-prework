@@ -1,8 +1,8 @@
 def oxford_comma(array)
   
   if array.count == 3
-    array[1] << (" and #{array[-1]}")
-    array[0..3].join(", ")
+    array[1] << (" and #{array[3]}")
+    array[0..2].join(", ")
   else
     array.join(" and ")
   end
